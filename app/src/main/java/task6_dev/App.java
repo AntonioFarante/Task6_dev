@@ -3,12 +3,15 @@
  */
 package task6_dev;
 
+import task6_dev.DataBase.DataBase;
+import task6_dev.DbServises.DatabaseInitService;
+
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
+
+
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        DataBase db = DataBase.getInstance();
+        new DatabaseInitService().initDb(db);
     }
 }
