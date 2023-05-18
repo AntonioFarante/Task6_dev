@@ -3,15 +3,20 @@
  */
 package task6_dev;
 
+import task6_dev.ClientServices.ClientService;
 import task6_dev.DataBase.DataBase;
 import task6_dev.DbServises.DatabaseInitService;
+import task6_dev.Entity.Client;
+
+import java.sql.SQLException;
+import java.util.List;
 
 public class App {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
         DataBase db = DataBase.getInstance();
-        new DatabaseInitService().initDb(db);
+
     }
 }
