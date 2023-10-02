@@ -1,0 +1,7 @@
+2023-06-26 15:38:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CLIENT" уже существует
+Table "CLIENT" already exists; SQL statement:
+CREATE TABLE client (
+	id IDENTITY PRIMARY KEY,
+	name VARCHAR(200)
+) [42101-214]
