@@ -8,7 +8,7 @@ public class DataBase {
 
     private DataBase() {
         try {
-            String connectionUrl = "jdbc:h2:./testFlyWay_db";
+            String connectionUrl = "jdbc:h2:./11111_db";
             connection = DriverManager.getConnection(connectionUrl);
         } catch (SQLException e) {
             e.printStackTrace();

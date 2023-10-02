@@ -17,6 +17,6 @@ public class App {
 
     public static void main(String[] args) throws SQLException {
         DataBase db = DataBase.getInstance();
-
+        new DatabaseInitService().initDb(db);
     }
 }

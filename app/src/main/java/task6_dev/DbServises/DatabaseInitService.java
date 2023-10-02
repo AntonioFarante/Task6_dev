@@ -14,7 +14,7 @@ public class DatabaseInitService {
        // Create the Flyway instance and point it to the database
        Flyway flyway = Flyway
                .configure()
-               .dataSource("jdbc:h2:./testFlyWay_db", null, null)
+               .dataSource("jdbc:h2:./11113_db", null, null)
                .load();
 
        // Start the migration
